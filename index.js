@@ -163,7 +163,7 @@ function rk9guide(dispatch) {
 		job = -1,
 		whichboss = 0,
 		whichmode = 0,
-		kr = null,
+		//kr = true,
 		isTank = false,
 		warned = false,
 		checklastboss = true,
@@ -202,7 +202,7 @@ function rk9guide(dispatch) {
 		model = event.templateId;
 		name = event.name;
 		job = model % 100
-		if(kr === null) kr = (dispatch.base.majorPatchVersion < 74) ? false : true;
+		//if(kr === null) kr = (dispatch.base.majorPatchVersion < 74) ? false : true;
 		if (job === 2 || job === 11) isTank = true;				// Check if class = Lancer / Brawler
 		else isTank = false;
 		setTimeout(function(){
@@ -291,9 +291,9 @@ function rk9guide(dispatch) {
 		command.message('WhichBoss: ' + whichboss);
 		command.message('IsInv: ' + isInv);
 		command.message('Itemhelper: ' + itemhelper);
-		command.message('KR: ' + kr);
+		//command.message('KR: ' + kr);
 	});
-	
+		
 	// NEED MORE TESTING 
 	// FOR WARRIOR / ZERK TANK MODE
 	/*dispatch.hook('S_ABNORMALITY_BEGIN', 2, (event) => {
@@ -349,12 +349,11 @@ function rk9guide(dispatch) {
 	
 	dispatch.hook('S_BOSS_GAGE_INFO', 3, (event) => {					// DO NOT EDIT IF UN-SURE
 		if (!enabled) return;
-		bosshp = event.curHp / event.maxHp;
-		if(bosshp === 1) {
+		if(event.curHp == event.maxHp) {
 			initialize();	
 		}
-		if(whichboss != 0) {
-		if (bosshp <= 0)
+		if(whichboss) {
+		if (boss - event.id != 0)
 		{
 			whichboss = 0;
 			warned = false;
@@ -392,10 +391,10 @@ function rk9guide(dispatch) {
 			} else if(event.templateId === BossID[2]) {
 				whichboss = 3;
 				boss = event.id;
-				if(bosshp <= 0.70 && !warned) {
+				/*if(bosshp <= 0.70 && !warned) {
 					warned = true;
 					sendMessage('Boss 70%');
-				}
+				}*/
 				return;
 			} else return false;
 		} else insidezone = false;
@@ -407,11 +406,11 @@ function rk9guide(dispatch) {
 		if(msgId === 9935311) { //STANDARD
 			firstskill = tempskill;
 			secondskill = 0;
-			sendMessage ('Next: ' + firstskill + ' + ' + secondskill); 
+			//sendMessage ('Next: ' + firstskill + ' + ' + secondskill); 
 		} else if (msgId === 9935312) { //REVERSE
 			secondskill = tempskill;
 			firstskill = 0;
-			sendMessage ('Next: ' + firstskill + ' + ' + secondskill); 
+			//sendMessage ('Next: ' + firstskill + ' + ' + secondskill); 
 		}
 		if(!checklastboss) return;
 		if (msgId === 9935302) {
@@ -488,19 +487,34 @@ function rk9guide(dispatch) {
 		return;
 	 });
 	 
+	 function newtoold(obj = {}) {
+        if(typeof obj === 'number') obj = {type: 1, id: obj}
+
+		const hasHuntingZone = Boolean(obj.npc) && obj.type == 1
+
+		let raw = (Number(obj.id) || 0) & (hasHuntingZone ? 0xffff : 0x3ffffff)
+		if(hasHuntingZone) raw |= (obj.huntingZoneId & 0x3ff) << 16
+		raw |= (obj.type & 0xf) << 26
+		raw |= (obj.npc & 1) << 30
+		raw |= (obj.reserved & 1) << 31
+
+		return raw
+	}
+	 
 	 dispatch.hook('S_ACTION_STAGE', 7, (event) => {								// DO NOT EDIT IF UN-SURE
 		 if(!enabled) return;																								// Main script for calling out attacks
 		 if(insidezone && insidemap) {
 			bossCurLocation = {x: event.loc.x,y: event.loc.y,z: event.loc.z,w: event.w};
-			let skillid = event.skill;
-			if(kr && whichmode === 1) {
+			let skillid = newtoold(event.skill); // there, fixed the guide :ok_hand:
+			//let skillid = event.skill;
+			/*if(kr && whichmode === 1) {
 					if(event.skill.id - 352 >= 1000)	skillid = "118902" + (event.skill.id - 352);
 					else skillid = "1189020" + (event.skill.id - 352);
 			}
 			if(kr && whichmode === 2) {
 			if(event.skill.id + 6848 >= 1000)	skillid = "120212" + (event.skill.id + 6848);
 				else skillid = "1202120" + (event.skill.id + 6848);
-			}
+			}*/
 			if(event.stage === 0) {
 			if(whichmode === 1) {
 				if(whichboss === 1) {
@@ -540,8 +554,8 @@ function rk9guide(dispatch) {
 						}
 						if(skillid == 1189020969) {
 							shieldwarning = setTimeout(function(){
-							sendMessage('SHIELD COMING IN 10SEC');
-							}, 90000);
+							sendMessage('SHIELD IN 10SEC');
+							}, 100000);
 						}
 						if(itemhelper && !streamenabled) {
 						if(skillid == 1189020764 || skillid == 1189021764 || skillid == 1189020767 || skillid == 1189021767) {
@@ -634,7 +648,7 @@ function rk9guide(dispatch) {
 						Spawnitem(603, 7000, 340, 300);
 						Spawnitem(603, 7000, 360, 300);
 						setTimeout(function(){
-						sendMessage('Next: '  + firstskill + ' + ' + secondskill);
+						//sendMessage('Next: '  + firstskill + ' + ' + secondskill);
 						}, 5500);
 					}
 					}
@@ -964,7 +978,7 @@ function rk9guide(dispatch) {
 	function Despawn(uid){
 	dispatch.toClient('S_DESPAWN_COLLECTION', 2, {
 			gameId : uid,
-			collected : false
+			collected : 0
 		});
 	}
 	

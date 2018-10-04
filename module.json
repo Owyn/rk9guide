@@ -1,5 +1,5 @@
 {
-	"servers":["https://raw.githubusercontent.com/Shinoyx/rk9guide/master/"],
-	"supportUrl":"https://discord.gg/maqBmJV",
+	"servers":["https://raw.githubusercontent.com/Owyn/rk9guide/master/"],
+	"supportUrl":"https://github.com/Owyn/rk9guide/issues",
 	"disableAutoUpdate": false
 }
