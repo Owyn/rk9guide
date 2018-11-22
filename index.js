@@ -315,7 +315,7 @@ function rk9guide(dispatch) {
 		}
 	});*/
 	
-	dispatch.hook('S_SPAWN_NPC', 9, (event) => {
+	dispatch.hook('S_SPAWN_NPC', 10, (event) => {
 		if(!enabled) return;
 		if(!itemhelper || streamenabled) return;
 		if(insidemap && insidezone) {
@@ -501,7 +501,7 @@ function rk9guide(dispatch) {
 		return raw
 	}
 	 
-	 dispatch.hook('S_ACTION_STAGE', 7, (event) => {								// DO NOT EDIT IF UN-SURE
+	 dispatch.hook('S_ACTION_STAGE', 8, (event) => {								// DO NOT EDIT IF UN-SURE
 		 if(!enabled) return;																								// Main script for calling out attacks
 		 if(insidezone && insidemap) {
 			bossCurLocation = {x: event.loc.x,y: event.loc.y,z: event.loc.z,w: event.w};

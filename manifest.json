@@ -1,13 +1,13 @@
 {
 	"files": {
-		"index.js": "8cf818fec991126eec9c84ac8169c35aa5748b6af5be82505a465384036dc2f6",
+		"index.js": "8dd4a5e1b4c22df5e4faefe8003ba5a64dd818ed7743f84531e3e8516e4bd591",
 		"module.json": "ae9e20dacf8d3af60c23f7d51b0df0392b562fd89bac46ea4fc83714a90124e2"
 	},
 	"defs": {
 		"C_ASK_INTERACTIVE": 2,
 		"C_CHAT": 1,
 		"C_CHECK_VERSION": 1,
-		"S_ACTION_STAGE": 7,
+		"S_ACTION_STAGE": 8,
 		"S_BOSS_GAGE_INFO": 3,
 		"S_CHAT": 2,
 		"S_DESPAWN_COLLECTION": 2,
@@ -16,6 +16,6 @@
 		"S_LOGIN": 10,
 		"S_QUEST_BALLOON": 1,
 		"S_SPAWN_COLLECTION": 4,
-		"S_SPAWN_NPC": 9
+		"S_SPAWN_NPC": 10
 	}
 }
