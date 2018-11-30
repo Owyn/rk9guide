@@ -1,7 +1,6 @@
 /* SCRIPT BY SHINO */
 /* Usable Sysbols ◎●←↑→↓↖↗↘↙ */
 
-const Command = require('command');
 const Vec3 = require('tera-vec3');
 const mapID = [9735, 9935];						// MAP ID to input [ Normal Mode , Hard Mode ]
 const HuntingZn = [735, 935]; 					// Add in your own Hunting Zone [ Normal Mode , Hard Mode ] 
@@ -143,7 +142,7 @@ module.exports = function rk9guidewrap(dispatch) {
 	
 	
 function rk9guide(dispatch) {
-	const command = Command(dispatch);
+	const command = dispatch.command || dispatch.require.command;
 	let firstskill = 0,
 		secondskill = 0,
 		tempskill = 0,
@@ -173,7 +172,8 @@ function rk9guide(dispatch) {
 		lastbosstoparty = false,
 		enabled = true,
 	   	streamenabled = false,
-	    shieldwarning,
+	   	shieldwarning,
+	   	bossCurLocation,
 		itemhelper = true;
 		
 	// DO NOT EDIT IF UN-SURE
@@ -984,7 +984,7 @@ function rk9guide(dispatch) {
 	
 	dispatch.hook('S_CHAT', 2, event =>
 	{
-		if(insidezone && insidemap && event.channel === 21 && event.authorID.notEquals(cid))
+		if(insidezone && insidemap && event.channel === 21 && event.authorID != cid)
 		{
 			event.channel = 1
 			return true
