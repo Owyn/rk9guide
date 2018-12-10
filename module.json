@@ -1,4 +1,10 @@
 {
+	"name": "rk9guide",
+	"author": "Owyn",
+	"description": "Guide for RK9 dungeon",
+	"options": {
+		"niceName": "rk9guide"
+	},
 	"servers":["https://raw.githubusercontent.com/Owyn/rk9guide/master/"],
 	"supportUrl":"https://github.com/Owyn/rk9guide/issues",
 	"disableAutoUpdate": false

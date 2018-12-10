@@ -133,15 +133,7 @@ const ThirdBossActionsTankHM = {
 	
 };
 
-module.exports = function rk9guidewrap(dispatch) {
-	if(!dispatch.base.protocolVersion)
-        dispatch.hook('C_CHECK_VERSION', 1, (event) => { rk9guide(dispatch); });
-    else
-        rk9guide(dispatch);
-}
-	
-	
-function rk9guide(dispatch) {
+module.exports = function rk9guide(dispatch) {
 	const command = dispatch.command || dispatch.require.command;
 	let firstskill = 0,
 		secondskill = 0,
