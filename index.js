@@ -551,17 +551,17 @@ module.exports = function rk9guide(dispatch) {
 						}
 						if(itemhelper && !streamenabled) {
 						if(skillid == 1189020764 || skillid == 1189021764 || skillid == 1189020767 || skillid == 1189021767) {
-							Spawnitem(556, 3000, 190,200);
-							Spawnitem(556, 3000, 10,200);
+							Spawnitem(476, 3000, 190,200);
+							Spawnitem(476, 3000, 10,200);
 						} else if (skillid == 1189020765 || skillid == 1189021765 || skillid == 1189020766 || skillid == 1189021766) {
-							Spawnitem(556, 3000, 170, 200);
-							Spawnitem(556, 3000, 350, 200);
+							Spawnitem(476, 3000, 170, 200);
+							Spawnitem(476, 3000, 350, 200);
 						} else if(skillid == 1202127964 || skillid == 1202128964 || skillid == 1202127967 || skillid == 1202128967) {
-							Spawnitem(556, 3000, 190,200);
-							Spawnitem(556, 3000, 10,200);
+							Spawnitem(476, 3000, 190,200);
+							Spawnitem(476, 3000, 10,200);
 						} else if (skillid == 1202127965 || skillid == 1202128965 || skillid == 1202127966 || skillid == 1202128966) {
-							Spawnitem(556, 3000, 170, 200);
-							Spawnitem(556, 3000, 350, 200);
+							Spawnitem(476, 3000, 170, 200);
+							Spawnitem(476, 3000, 350, 200);
 						}
 						}
 			} else return;
@@ -608,37 +608,37 @@ module.exports = function rk9guide(dispatch) {
 					}
 					if(itemhelper && !streamenabled) {
 					if(skillid == 1189020764 || skillid == 1189021764 || skillid == 1189020767 || skillid == 1189021767) {
-						Spawnitem(556, 3000, 190,200);
-						Spawnitem(556, 3000, 10,200);
+						Spawnitem(476, 3000, 190,200);
+						Spawnitem(476, 3000, 10,200);
 					} else if (skillid == 1189020765 || skillid == 1189021765 || skillid == 1189020766 || skillid == 1189021766) {
-						Spawnitem(556, 3000, 170, 200);
-						Spawnitem(556, 3000, 350, 200);
+						Spawnitem(476, 3000, 170, 200);
+						Spawnitem(476, 3000, 350, 200);
 					} else if(skillid == 1202127964 || skillid == 1202128964 || skillid == 1202127967 || skillid == 1202128967) {
-						Spawnitem(556, 3000, 190,200);
-						Spawnitem(556, 3000, 10,200);
+						Spawnitem(476, 3000, 190,200);
+						Spawnitem(476, 3000, 10,200);
 					} else if (skillid == 1202127965 || skillid == 1202128965 || skillid == 1202127966 || skillid == 1202128966) {
-						Spawnitem(556, 3000, 170, 200);
-						Spawnitem(556, 3000, 350, 200);
+						Spawnitem(476, 3000, 170, 200);
+						Spawnitem(476, 3000, 350, 200);
 					}
 					if(skillid == 1202128153) {
-						Spawnitem(603, 7000, 20, 300);
-						Spawnitem(603, 7000, 40, 300);
-						Spawnitem(603, 7000, 60, 300);
-						Spawnitem(603, 7000, 80, 300);
-						Spawnitem(603, 7000, 100, 300);
-						Spawnitem(603, 7000, 120, 300);
-						Spawnitem(603, 7000, 140, 300);
-						Spawnitem(603, 7000, 160, 300);
-						Spawnitem(603, 7000, 180, 300);
-						Spawnitem(603, 7000, 200, 300);
-						Spawnitem(603, 7000, 220, 300);
-						Spawnitem(603, 7000, 240, 300);
-						Spawnitem(603, 7000, 260, 300);
-						Spawnitem(603, 7000, 280, 300);
-						Spawnitem(603, 7000, 300, 300);
-						Spawnitem(603, 7000, 320, 300);
-						Spawnitem(603, 7000, 340, 300);
-						Spawnitem(603, 7000, 360, 300);
+						Spawnitem(553, 7000, 20, 300);
+						Spawnitem(553, 7000, 40, 300);
+						Spawnitem(553, 7000, 60, 300);
+						Spawnitem(553, 7000, 80, 300);
+						Spawnitem(553, 7000, 100, 300);
+						Spawnitem(553, 7000, 120, 300);
+						Spawnitem(553, 7000, 140, 300);
+						Spawnitem(553, 7000, 160, 300);
+						Spawnitem(553, 7000, 180, 300);
+						Spawnitem(553, 7000, 200, 300);
+						Spawnitem(553, 7000, 220, 300);
+						Spawnitem(553, 7000, 240, 300);
+						Spawnitem(553, 7000, 260, 300);
+						Spawnitem(553, 7000, 280, 300);
+						Spawnitem(553, 7000, 300, 300);
+						Spawnitem(553, 7000, 320, 300);
+						Spawnitem(553, 7000, 340, 300);
+						Spawnitem(553, 7000, 360, 300);
 						setTimeout(function(){
 						//sendMessage('Next: '  + firstskill + ' + ' + secondskill);
 						}, 5500);
@@ -649,157 +649,157 @@ module.exports = function rk9guide(dispatch) {
 		} else if (event.stage === 3) {
 			if(whichmode != 0 && whichboss === 3 && itemhelper && !streamenabled) {
 				if(skillid == 1189020764 || skillid == 1189021764 || skillid == 1189020767 || skillid == 1189021767) {
-					Spawnitem(603, 3000, 190,210);
-					Spawnitem(603, 3000, 190,230);
-					Spawnitem(603, 3000, 190,250);
-					Spawnitem(603, 3000, 190,270);
-					Spawnitem(603, 3000, 190,290);
-					Spawnitem(603, 3000, 200,210);
-					Spawnitem(603, 3000, 210,220);
-					Spawnitem(603, 3000, 220,230);
-					Spawnitem(603, 3000, 230,240);
-					Spawnitem(603, 3000, 240,250);
-					Spawnitem(603, 3000, 10,210);
-					Spawnitem(603, 3000, 10,230);
-					Spawnitem(603, 3000, 10,250);
-					Spawnitem(603, 3000, 10,270);
-					Spawnitem(603, 3000, 10,290);
-					Spawnitem(603, 3000, 20,210);
-					Spawnitem(603, 3000, 30,220);
-					Spawnitem(603, 3000, 40,230);
-					Spawnitem(603, 3000, 50,240);
-					Spawnitem(603, 3000, 60,250);
+					Spawnitem(553, 3000, 190,210);
+					Spawnitem(553, 3000, 190,230);
+					Spawnitem(553, 3000, 190,250);
+					Spawnitem(553, 3000, 190,270);
+					Spawnitem(553, 3000, 190,290);
+					Spawnitem(553, 3000, 200,210);
+					Spawnitem(553, 3000, 210,220);
+					Spawnitem(553, 3000, 220,230);
+					Spawnitem(553, 3000, 230,240);
+					Spawnitem(553, 3000, 240,250);
+					Spawnitem(553, 3000, 10,210);
+					Spawnitem(553, 3000, 10,230);
+					Spawnitem(553, 3000, 10,250);
+					Spawnitem(553, 3000, 10,270);
+					Spawnitem(553, 3000, 10,290);
+					Spawnitem(553, 3000, 20,210);
+					Spawnitem(553, 3000, 30,220);
+					Spawnitem(553, 3000, 40,230);
+					Spawnitem(553, 3000, 50,240);
+					Spawnitem(553, 3000, 60,250);
 				} else if (skillid == 1189020765 || skillid == 1189021765 || skillid == 1189020766 || skillid == 1189021766) {
-					Spawnitem(603, 3000, 170, 210);
-					Spawnitem(603, 3000, 170, 230);
-					Spawnitem(603, 3000, 170, 250);
-					Spawnitem(603, 3000, 170, 270);
-					Spawnitem(603, 3000, 170, 290);
-					Spawnitem(603, 3000, 160, 210);
-					Spawnitem(603, 3000, 150, 220);
-					Spawnitem(603, 3000, 140, 230);
-					Spawnitem(603, 3000, 130, 240);
-					Spawnitem(603, 3000, 120, 250);
-					Spawnitem(603, 3000, 350, 210);
-					Spawnitem(603, 3000, 350, 230);
-					Spawnitem(603, 3000, 350, 250);
-					Spawnitem(603, 3000, 350, 270);
-					Spawnitem(603, 3000, 350, 290);
-					Spawnitem(603, 3000, 340, 210);
-					Spawnitem(603, 3000, 330, 220);
-					Spawnitem(603, 3000, 320, 230);
-					Spawnitem(603, 3000, 310, 240);
-					Spawnitem(603, 3000, 300, 250);
+					Spawnitem(553, 3000, 170, 210);
+					Spawnitem(553, 3000, 170, 230);
+					Spawnitem(553, 3000, 170, 250);
+					Spawnitem(553, 3000, 170, 270);
+					Spawnitem(553, 3000, 170, 290);
+					Spawnitem(553, 3000, 160, 210);
+					Spawnitem(553, 3000, 150, 220);
+					Spawnitem(553, 3000, 140, 230);
+					Spawnitem(553, 3000, 130, 240);
+					Spawnitem(553, 3000, 120, 250);
+					Spawnitem(553, 3000, 350, 210);
+					Spawnitem(553, 3000, 350, 230);
+					Spawnitem(553, 3000, 350, 250);
+					Spawnitem(553, 3000, 350, 270);
+					Spawnitem(553, 3000, 350, 290);
+					Spawnitem(553, 3000, 340, 210);
+					Spawnitem(553, 3000, 330, 220);
+					Spawnitem(553, 3000, 320, 230);
+					Spawnitem(553, 3000, 310, 240);
+					Spawnitem(553, 3000, 300, 250);
 				} else if(skillid == 1202127964 || skillid == 1202128964 || skillid == 1202127967 || skillid == 1202128967) {
-					Spawnitem(603, 3000, 190,210);
-					Spawnitem(603, 3000, 190,230);
-					Spawnitem(603, 3000, 190,250);
-					Spawnitem(603, 3000, 190,270);
-					Spawnitem(603, 3000, 190,290);
-					Spawnitem(603, 3000, 200,210);
-					Spawnitem(603, 3000, 210,220);
-					Spawnitem(603, 3000, 220,230);
-					Spawnitem(603, 3000, 230,240);
-					Spawnitem(603, 3000, 240,250);
-					Spawnitem(603, 3000, 10,210);
-					Spawnitem(603, 3000, 10,230);
-					Spawnitem(603, 3000, 10,250);
-					Spawnitem(603, 3000, 10,270);
-					Spawnitem(603, 3000, 10,290);
-					Spawnitem(603, 3000, 20,210);
-					Spawnitem(603, 3000, 30,220);
-					Spawnitem(603, 3000, 40,230);
-					Spawnitem(603, 3000, 50,240);
-					Spawnitem(603, 3000, 60,250);
+					Spawnitem(553, 3000, 190,210);
+					Spawnitem(553, 3000, 190,230);
+					Spawnitem(553, 3000, 190,250);
+					Spawnitem(553, 3000, 190,270);
+					Spawnitem(553, 3000, 190,290);
+					Spawnitem(553, 3000, 200,210);
+					Spawnitem(553, 3000, 210,220);
+					Spawnitem(553, 3000, 220,230);
+					Spawnitem(553, 3000, 230,240);
+					Spawnitem(553, 3000, 240,250);
+					Spawnitem(553, 3000, 10,210);
+					Spawnitem(553, 3000, 10,230);
+					Spawnitem(553, 3000, 10,250);
+					Spawnitem(553, 3000, 10,270);
+					Spawnitem(553, 3000, 10,290);
+					Spawnitem(553, 3000, 20,210);
+					Spawnitem(553, 3000, 30,220);
+					Spawnitem(553, 3000, 40,230);
+					Spawnitem(553, 3000, 50,240);
+					Spawnitem(553, 3000, 60,250);
 				} else if (skillid == 1202127965 || skillid == 1202128965 || skillid == 1202127966 || skillid == 1202128966) {
-					Spawnitem(603, 3000, 170, 210);
-					Spawnitem(603, 3000, 170, 230);
-					Spawnitem(603, 3000, 170, 250);
-					Spawnitem(603, 3000, 170, 270);
-					Spawnitem(603, 3000, 170, 290);
-					Spawnitem(603, 3000, 160, 210);
-					Spawnitem(603, 3000, 150, 220);
-					Spawnitem(603, 3000, 140, 230);
-					Spawnitem(603, 3000, 130, 240);
-					Spawnitem(603, 3000, 120, 250);
-					Spawnitem(603, 3000, 350, 210);
-					Spawnitem(603, 3000, 350, 230);
-					Spawnitem(603, 3000, 350, 250);
-					Spawnitem(603, 3000, 350, 270);
-					Spawnitem(603, 3000, 350, 290);
-					Spawnitem(603, 3000, 340, 210);
-					Spawnitem(603, 3000, 330, 220);
-					Spawnitem(603, 3000, 320, 230);
-					Spawnitem(603, 3000, 310, 240);
-					Spawnitem(603, 3000, 300, 250);
+					Spawnitem(553, 3000, 170, 210);
+					Spawnitem(553, 3000, 170, 230);
+					Spawnitem(553, 3000, 170, 250);
+					Spawnitem(553, 3000, 170, 270);
+					Spawnitem(553, 3000, 170, 290);
+					Spawnitem(553, 3000, 160, 210);
+					Spawnitem(553, 3000, 150, 220);
+					Spawnitem(553, 3000, 140, 230);
+					Spawnitem(553, 3000, 130, 240);
+					Spawnitem(553, 3000, 120, 250);
+					Spawnitem(553, 3000, 350, 210);
+					Spawnitem(553, 3000, 350, 230);
+					Spawnitem(553, 3000, 350, 250);
+					Spawnitem(553, 3000, 350, 270);
+					Spawnitem(553, 3000, 350, 290);
+					Spawnitem(553, 3000, 340, 210);
+					Spawnitem(553, 3000, 330, 220);
+					Spawnitem(553, 3000, 320, 230);
+					Spawnitem(553, 3000, 310, 240);
+					Spawnitem(553, 3000, 300, 250);
 				}
 			}
 		} else if (event.stage === 1) {
 			if(whichmode === 2 && whichboss === 1 && itemhelper && !streamenabled) {
 					if(skillid == 1202128167) { //Safe front right
-						Spawnitem(559, 9000, 338,120);
+						Spawnitem(476, 9000, 338,120);
 					} else if (skillid == 1202128163) { //Safe front right														
-						Spawnitem(559, 9000, 338,120);
+						Spawnitem(476, 9000, 338,120);
 					} else if (skillid == 1202129167) { //Safe front right
-						Spawnitem(559, 9000, 338,120);
+						Spawnitem(476, 9000, 338,120);
 					} else if (skillid == 1202129163) { //Safe front right
-						Spawnitem(559, 9000, 338,120);
+						Spawnitem(476, 9000, 338,120);
 					} else if (skillid == 1202128174) { //Safe front left
-						Spawnitem(559, 9000, 23,120);
+						Spawnitem(476, 9000, 23,120);
 					} else if (skillid == 1202128162) { //Safe front left
-						Spawnitem(559, 9000, 23,120);
+						Spawnitem(476, 9000, 23,120);
 					} else if (skillid == 1202129174) { //Safe front left
-						Spawnitem(559, 9000, 23,120);
+						Spawnitem(476, 9000, 23,120);
 					} else if (skillid == 1202129162) { //Safe front left
-						Spawnitem(559, 9000, 23,120);
+						Spawnitem(476, 9000, 23,120);
 					} else if (skillid == 1202128172) { //Safe right back
-						Spawnitem(559, 9000, 248,120);
+						Spawnitem(476, 9000, 248,120);
 					} else if (skillid == 1202129172) { //Safe right back
-						Spawnitem(559, 9000, 248,120);
+						Spawnitem(476, 9000, 248,120);
 					} else if (skillid == 1202128160) { //Safe right back
-						Spawnitem(559, 9000, 248,120);
+						Spawnitem(476, 9000, 248,120);
 					} else if (skillid == 1202129160) { //Safe right back
-						Spawnitem(559, 9000, 248,120);
+						Spawnitem(476, 9000, 248,120);
 					} else if (skillid == 1202128159) { //Safe right front
-						Spawnitem(559, 9000, 293,120);
+						Spawnitem(476, 9000, 293,120);
 					} else if (skillid == 1202129159) { //Safe right front
-						Spawnitem(559, 9000, 293,120);
+						Spawnitem(476, 9000, 293,120);
 					} else if (skillid == 1202128171) { //Safe right front
-						Spawnitem(559, 9000, 293,120);
+						Spawnitem(476, 9000, 293,120);
 					} else if (skillid == 1202129171) { //Safe right front
-						Spawnitem(559, 9000, 293,120);
+						Spawnitem(476, 9000, 293,120);
 					} else if (skillid == 1202128173) { //Safe left back
-						Spawnitem(559, 9000, 113,120);
+						Spawnitem(476, 9000, 113,120);
 					} else if (skillid == 1202129173) { //Safe left back
-						Spawnitem(559, 9000, 113,120);
+						Spawnitem(476, 9000, 113,120);
 					} else if (skillid == 1202128165) { //Safe left back
-						Spawnitem(559, 9000, 113,120);
+						Spawnitem(476, 9000, 113,120);
 					} else if (skillid == 1202129165) { //Safe left back
-						Spawnitem(559, 9000, 113,120);
+						Spawnitem(476, 9000, 113,120);
 					} else if (skillid == 1202128166) { //Safe left front
-						Spawnitem(559, 9000, 68,120);
+						Spawnitem(476, 9000, 68,120);
 					} else if (skillid == 1202129166) { //Safe left front
-						Spawnitem(559, 9000, 68,120);	
+						Spawnitem(476, 9000, 68,120);	
 					} else if (skillid == 1202128170) { //Safe left front
-						Spawnitem(559, 9000, 68,120);
+						Spawnitem(476, 9000, 68,120);
 					} else if (skillid == 1202129170) { //Safe left front
-						Spawnitem(559, 9000, 68,120);	
+						Spawnitem(476, 9000, 68,120);	
 					} else if (skillid == 1202128169) { //Safe back left
-						Spawnitem(559, 9000, 158,120);
+						Spawnitem(476, 9000, 158,120);
 					} else if (skillid == 1202129169) { //Safe back left
-						Spawnitem(559, 9000, 158,120);
+						Spawnitem(476, 9000, 158,120);
 					} else if (skillid == 1202128161) { //Safe back left
-						Spawnitem(559, 9000, 158,120);
+						Spawnitem(476, 9000, 158,120);
 					} else if (skillid == 1202129161) { //Safe back left
-						Spawnitem(559, 9000, 158,120);
+						Spawnitem(476, 9000, 158,120);
 					} else if (skillid == 1202128164) { //Safe back right
-						Spawnitem(559, 9000, 203,120);
+						Spawnitem(476, 9000, 203,120);
 					} else if (skillid == 1202129164) { //Safe back right
-						Spawnitem(559, 9000, 203,120);
+						Spawnitem(476, 9000, 203,120);
 					} else if (skillid == 1202128168) { //Safe back right
-						Spawnitem(559, 9000, 203,120);
+						Spawnitem(476, 9000, 203,120);
 					} else if (skillid == 1202129168) { //Safe back right
-						Spawnitem(559, 9000, 203,120);
+						Spawnitem(476, 9000, 203,120);
 					}
 			}
 			}
@@ -885,86 +885,86 @@ module.exports = function rk9guide(dispatch) {
 	}
 	
 	function secondbossorbs(pos, timer){
-		spawn2(603, timer, 0, 25, pos);
-		spawn2(603, timer, 0, 50, pos);
-		spawn2(603, timer, 0, 75, pos);
-		spawn2(603, timer, 0, 100, pos);
-		spawn2(603, timer, 0, 125, pos);
-		spawn2(603, timer, 0, 150, pos);
-		spawn2(603, timer, 0, 175, pos);
-		spawn2(603, timer, 0, 200, pos);
-		spawn2(603, timer, 0, 225, pos);
-		spawn2(603, timer, 0, 250, pos);
-		spawn2(603, timer, 0, 275, pos);
-		spawn2(603, timer, 0, 300, pos);
-		spawn2(603, timer, 0, 325, pos);
-		spawn2(603, timer, 0, 350, pos);
-		spawn2(603, timer, 0, 375, pos);
-		spawn2(603, timer, 0, 400, pos);
-		spawn2(603, timer, 0, 425, pos);
-		spawn2(603, timer, 0, 450, pos);
-		spawn2(603, timer, 0, 475, pos);
-		spawn2(603, timer, 0, 500, pos);
-		spawn2(603, timer, 90, 25, pos);
-		spawn2(603, timer, 90, 50, pos);
-		spawn2(603, timer, 90, 75, pos);
-		spawn2(603, timer, 90, 100, pos);
-		spawn2(603, timer, 90, 125, pos);
-		spawn2(603, timer, 90, 150, pos);
-		spawn2(603, timer, 90, 175, pos);
-		spawn2(603, timer, 90, 200, pos);
-		spawn2(603, timer, 90, 225, pos);
-		spawn2(603, timer, 90, 250, pos);
-		spawn2(603, timer, 90, 275, pos);
-		spawn2(603, timer, 90, 300, pos);
-		spawn2(603, timer, 90, 325, pos);
-		spawn2(603, timer, 90, 350, pos);
-		spawn2(603, timer, 90, 375, pos);
-		spawn2(603, timer, 90, 400, pos);
-		spawn2(603, timer, 90, 425, pos);
-		spawn2(603, timer, 90, 450, pos);
-		spawn2(603, timer, 90, 475, pos);
-		spawn2(603, timer, 90, 500, pos);
-		spawn2(603, timer, 180, 25, pos);
-		spawn2(603, timer, 180, 50, pos);
-		spawn2(603, timer, 180, 75, pos);
-		spawn2(603, timer, 180, 100, pos);
-		spawn2(603, timer, 180, 125, pos);
-		spawn2(603, timer, 180, 150, pos);
-		spawn2(603, timer, 180, 175, pos);
-		spawn2(603, timer, 180, 200, pos);
-		spawn2(603, timer, 180, 225, pos);
-		spawn2(603, timer, 180, 250, pos);
-		spawn2(603, timer, 180, 275, pos);
-		spawn2(603, timer, 180, 300, pos);
-		spawn2(603, timer, 180, 325, pos);
-		spawn2(603, timer, 180, 350, pos);
-		spawn2(603, timer, 180, 375, pos);
-		spawn2(603, timer, 180, 400, pos);
-		spawn2(603, timer, 180, 425, pos);
-		spawn2(603, timer, 180, 450, pos);
-		spawn2(603, timer, 180, 475, pos);
-		spawn2(603, timer, 180, 500, pos);
-		spawn2(603, timer, 270, 25, pos);
-		spawn2(603, timer, 270, 50, pos);
-		spawn2(603, timer, 270, 75, pos);
-		spawn2(603, timer, 270, 100, pos);
-		spawn2(603, timer, 270, 125, pos);
-		spawn2(603, timer, 270, 150, pos);
-		spawn2(603, timer, 270, 175, pos);
-		spawn2(603, timer, 270, 200, pos);
-		spawn2(603, timer, 270, 225, pos);
-		spawn2(603, timer, 270, 250, pos);
-		spawn2(603, timer, 270, 275, pos);
-		spawn2(603, timer, 270, 300, pos);
-		spawn2(603, timer, 270, 325, pos);
-		spawn2(603, timer, 270, 350, pos);
-		spawn2(603, timer, 270, 375, pos);
-		spawn2(603, timer, 270, 400, pos);
-		spawn2(603, timer, 270, 425, pos);
-		spawn2(603, timer, 270, 450, pos);
-		spawn2(603, timer, 270, 475, pos);
-		spawn2(603, timer, 270, 500, pos);
+		spawn2(537, timer, 0, 25, pos);
+		spawn2(537, timer, 0, 50, pos);
+		spawn2(537, timer, 0, 75, pos);
+		spawn2(537, timer, 0, 100, pos);
+		spawn2(537, timer, 0, 125, pos);
+		spawn2(537, timer, 0, 150, pos);
+		spawn2(537, timer, 0, 175, pos);
+		spawn2(537, timer, 0, 200, pos);
+		spawn2(537, timer, 0, 225, pos);
+		spawn2(537, timer, 0, 250, pos);
+		spawn2(537, timer, 0, 275, pos);
+		spawn2(537, timer, 0, 300, pos);
+		spawn2(537, timer, 0, 325, pos);
+		spawn2(537, timer, 0, 350, pos);
+		spawn2(537, timer, 0, 375, pos);
+		spawn2(537, timer, 0, 400, pos);
+		spawn2(537, timer, 0, 425, pos);
+		spawn2(537, timer, 0, 450, pos);
+		spawn2(537, timer, 0, 475, pos);
+		spawn2(537, timer, 0, 500, pos);
+		spawn2(537, timer, 90, 25, pos);
+		spawn2(537, timer, 90, 50, pos);
+		spawn2(537, timer, 90, 75, pos);
+		spawn2(537, timer, 90, 100, pos);
+		spawn2(537, timer, 90, 125, pos);
+		spawn2(537, timer, 90, 150, pos);
+		spawn2(537, timer, 90, 175, pos);
+		spawn2(537, timer, 90, 200, pos);
+		spawn2(537, timer, 90, 225, pos);
+		spawn2(537, timer, 90, 250, pos);
+		spawn2(537, timer, 90, 275, pos);
+		spawn2(537, timer, 90, 300, pos);
+		spawn2(537, timer, 90, 325, pos);
+		spawn2(537, timer, 90, 350, pos);
+		spawn2(537, timer, 90, 375, pos);
+		spawn2(537, timer, 90, 400, pos);
+		spawn2(537, timer, 90, 425, pos);
+		spawn2(537, timer, 90, 450, pos);
+		spawn2(537, timer, 90, 475, pos);
+		spawn2(537, timer, 90, 500, pos);
+		spawn2(537, timer, 180, 25, pos);
+		spawn2(537, timer, 180, 50, pos);
+		spawn2(537, timer, 180, 75, pos);
+		spawn2(537, timer, 180, 100, pos);
+		spawn2(537, timer, 180, 125, pos);
+		spawn2(537, timer, 180, 150, pos);
+		spawn2(537, timer, 180, 175, pos);
+		spawn2(537, timer, 180, 200, pos);
+		spawn2(537, timer, 180, 225, pos);
+		spawn2(537, timer, 180, 250, pos);
+		spawn2(537, timer, 180, 275, pos);
+		spawn2(537, timer, 180, 300, pos);
+		spawn2(537, timer, 180, 325, pos);
+		spawn2(537, timer, 180, 350, pos);
+		spawn2(537, timer, 180, 375, pos);
+		spawn2(537, timer, 180, 400, pos);
+		spawn2(537, timer, 180, 425, pos);
+		spawn2(537, timer, 180, 450, pos);
+		spawn2(537, timer, 180, 475, pos);
+		spawn2(537, timer, 180, 500, pos);
+		spawn2(537, timer, 270, 25, pos);
+		spawn2(537, timer, 270, 50, pos);
+		spawn2(537, timer, 270, 75, pos);
+		spawn2(537, timer, 270, 100, pos);
+		spawn2(537, timer, 270, 125, pos);
+		spawn2(537, timer, 270, 150, pos);
+		spawn2(537, timer, 270, 175, pos);
+		spawn2(537, timer, 270, 200, pos);
+		spawn2(537, timer, 270, 225, pos);
+		spawn2(537, timer, 270, 250, pos);
+		spawn2(537, timer, 270, 275, pos);
+		spawn2(537, timer, 270, 300, pos);
+		spawn2(537, timer, 270, 325, pos);
+		spawn2(537, timer, 270, 350, pos);
+		spawn2(537, timer, 270, 375, pos);
+		spawn2(537, timer, 270, 400, pos);
+		spawn2(537, timer, 270, 425, pos);
+		spawn2(537, timer, 270, 450, pos);
+		spawn2(537, timer, 270, 475, pos);
+		spawn2(537, timer, 270, 500, pos);
 	}
 	
 	function Despawn(uid){
