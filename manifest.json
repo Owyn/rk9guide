@@ -1,6 +1,6 @@
 {
 	"files": {
-		"index.js": "ef8a0f110bbcd79f2a2a671d07603c8e99821e634388d0fe45421917c56b0b11",
+		"index.js": "8877c4dac97749b90ebd9c798d56c3b2d67682236a59017549e512a46ec56b92",
 		"module.json": "b0290bbf8748e05350738db4bc6220bf58cbeb3e86182f672a6ba8c1ac4d752d"
 	},
 	"defs": {
@@ -15,6 +15,6 @@
 		"S_LOGIN": 10,
 		"S_QUEST_BALLOON": 1,
 		"S_SPAWN_COLLECTION": 4,
-		"S_SPAWN_NPC": 10
+		"S_SPAWN_NPC": [10,11]
 	}
 }

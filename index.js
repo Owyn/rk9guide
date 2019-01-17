@@ -307,7 +307,7 @@ module.exports = function rk9guide(dispatch) {
 		}
 	});*/
 	
-	dispatch.hook('S_SPAWN_NPC', 10, (event) => {
+	dispatch.hook('S_SPAWN_NPC', dispatch.majorPatchVersion >= 79 ? 11 : 10, (event) => {
 		if(!enabled) return;
 		if(!itemhelper || streamenabled) return;
 		if(insidemap && insidezone) {
