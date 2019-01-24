@@ -189,7 +189,7 @@ module.exports = function rk9guide(dispatch) {
 			} else insidemap = false;
     });
 	
-	dispatch.hook('S_LOGIN', 10, (event) => {
+	dispatch.hook('S_LOGIN', 12, (event) => {
 		cid = event.gameId;
 		model = event.templateId;
 		name = event.name;
