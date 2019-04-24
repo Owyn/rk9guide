@@ -1,6 +1,6 @@
 {
 	"files": {
-		"index.js": "3d75c9d83a4bde9b7d392cc3fb59af1a6b96105ccdfb5ee44b002ae324b89666",
+		"index.js": "dffca2497215718179dbd082b7d0581938e8ae645a8744fe754ae5b398e79e97",
 		"module.json": "b0290bbf8748e05350738db4bc6220bf58cbeb3e86182f672a6ba8c1ac4d752d"
 	},
 	"defs": {
@@ -12,7 +12,7 @@
 		"S_DESPAWN_COLLECTION": 2,
 		"S_DUNGEON_EVENT_MESSAGE": 2,
 		"S_LOAD_TOPO": 3,
-		"S_LOGIN": 12,
+		"S_LOGIN": [12,13],
 		"S_QUEST_BALLOON": 1,
 		"S_SPAWN_COLLECTION": 4,
 		"S_SPAWN_NPC": [10,11]
