@@ -1,14 +1,14 @@
 {
 	"files": {
-		"index.js": "dffca2497215718179dbd082b7d0581938e8ae645a8744fe754ae5b398e79e97",
+		"index.js": "ae0d52ac754ff31cb59c874ae3bdfd395714af651915c67b875bec84354676c3",
 		"module.json": "b0290bbf8748e05350738db4bc6220bf58cbeb3e86182f672a6ba8c1ac4d752d"
 	},
 	"defs": {
 		"C_ASK_INTERACTIVE": 2,
 		"C_CHAT": 1,
-		"S_ACTION_STAGE": 8,
+		"S_ACTION_STAGE": 9,
 		"S_BOSS_GAGE_INFO": 3,
-		"S_CHAT": 2,
+		"S_CHAT": [2,3],
 		"S_DESPAWN_COLLECTION": 2,
 		"S_DUNGEON_EVENT_MESSAGE": 2,
 		"S_LOAD_TOPO": 3,
