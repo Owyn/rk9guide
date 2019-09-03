@@ -974,9 +974,9 @@ module.exports = function rk9guide(dispatch) {
 		});
 	}
 	
-	dispatch.hook('S_CHAT', 2, event =>
+	dispatch.hook('S_CHAT', 3, event =>
 	{
-		if(insidezone && insidemap && event.channel === 21 && event.authorID != cid)
+		if(insidezone && insidemap && event.channel === 21 && event.gameId != cid)
 		{
 			event.channel = 1
 			return true
